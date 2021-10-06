@@ -1,0 +1,18 @@
+https://mattgreer.dev/blog/using-google-drive-for-form-submissions/
+
+entry.1291402443: Name
+entry.807969949: email@email.com
+entry.687532281: 9167473059
+entry.1903481898: What is the subject property address resp
+entry.2108037076: How soon do you need to close resp
+entry.485828684: What is your purchase price res
+entry.690732259: How much is your down payment res
+entry.2131597815: What is your estimated rehab expense res
+entry.1131533757: What is your estimated After Repair Value res
+entry.1684110662: How long do you need the loan res
+entry.573836672: What is your flipping experience res
+entry.1531400808: What is your estimated value res
+entry.955882059: How long do you need the loan res
+entry.1966155536: What is your exit strategy res
+entry.912044038: Owner Occupied
+entry.2108130954: Purchase - (Please answer the questions through Question 10 and skip the rest)

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Capita Mortgage Credit - Private Money Loans</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.1.1/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.1.1/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.1.1/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.1.1/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <!--MY STYLES HERE -->
+    <style media="screen">
+
+      body {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 1.2em;
+        color: gainsboro;
+        background-color: rgb(55, 79, 109);
+      }
+
+      .container {
+        max-width: 960px;
+        margin: auto;
+        justify-items: center;
+        justify-content: center;
+      }
+
+      .nav-bar {
+        display: inline;
+        width: 100%;
+      }
+      .nav-bar ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        text-decoration: none;
+        color: gainsboro;
+      }
+
+      .nav-bar ul li {
+        display: inline;
+        font-weight: bolder;
+        
+      }
+
+      .nav-bar a {
+        color: gainsboro;
+        text-decoration: none;
+      }
+      .nav-bar a:hover {
+        color: rgba(255, 166, 0, 0.884)
+      }
+
+      .center-head {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        opacity: 80%;
+      }
+
+      img:hover {
+        opacity: 65%;
+      }
+
+      .offer-list {
+        margin-bottom: 20px;
+      }
+      .offer-list ul {
+        column-count: 2;
+      }
+      .offer-list ul li {
+        margin: 5px 10px 5px 10px;
+        justify-content: space-between;
+
+      }
+
+      #where-we-lend {
+        margin-top: 30px;
+        padding: 20px;
+        font-size: 1em;
+        font-weight: bolder;
+        color: white;
+        border-radius: 20px;
+        border-style: none;
+        background-color:rgb(108, 164, 233);
+      }
+      #where-we-lend:hover {
+        color:rgba(255, 166, 0, 0.884);
+        background-color:rgba(108, 164, 233, 0.596);
+      }
+
+      label {
+        margin-bottom: 5px;
+      }
+
+      .form-group {
+        margin: 20px auto 10px auto;
+      }
+
+      .button {
+        padding: 10px;
+        font-size: 1.3em;
+        font-weight: bolder;
+        color: white;
+        border-radius: 10px;
+        border-style: none;
+        background-color:rgb(108, 164, 233);
+        
+      }
+      .button:hover {
+        color:rgba(255, 166, 0, 0.884);
+        background-color:rgba(108, 164, 233, 0.596);
+      }
+
+      .hiddenClass {
+        display: none;
+      }
+
+      @media only screen and (max-width: 650px) {
+        body {
+          font-size: 1em;
+        }
+
+        #where-we-lend {
+          padding: 10px;
+        }
+
+        .copyright {
+          font-size: 0.7em;
+        }
+      }
+
+      @media only screen and (max-width: 450px) {
+        body {
+          font-size: .8em;
+        }
+        .what-we-offer .center-head h2 {
+          font-size: 1.6em;
+          margin: 10px auto 0px auto;
+        }
+        .offer-list ul {
+        column-count: 1;
+        font-size: 1.2em;
+      }
+      }
+      
+    </style>
+  </head>
+  <!--MY CONTENT HERE-->
+  <body>
+    <div class="container">
+
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#where-we-lend">Where We Lend</a></li>
+          <li><a href="#new-loan-form">New Loan Form</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="center-head"><h1>Capita Mortgage Credit</h1></div>
+      <div class="center-head">
+        <img alt='Sacramento Tower Bridge' src="https://lh3.googleusercontent.com/pw/AM-JKLXDYo1KzRMu0pyRypEp6u2BfSWicWOJhWLACR-lbe4ATT5sVIfDBUAOCMsKME_18IXMb-ma5qUzI2vcs1tN9w7ao6A-sSOqSJO6a-Gcv5Sf-M3GL5IJ0ylXsGPWLeFaL9nxyp8vDW1gbkfKZhKdF20=w937-h625-no?authuser=2">
+      </div>
+
+      <div class="hiddenClass">
+        <h2>Sacramento Loans, Roseville Loans, Stockton Loans</h2>
+        <h2>Private money loans</h2>
+        <h2>Hard money loans</h2>
+      </div>
+
+      <br>
+
+      <div class="what-we-offer">
+        <div class="center-head"><h2>What We Offer</h2></div>
+        <div class="offer-list center-head">
+          <ul>
+            <li>Same Day Approval</li>
+            <li>Rates Starting at 8.99% Interest</li>
+            <li>Loans from $50,000 - $750,000</li>
+            <li>No Credit Checks</li>
+            <li>Residential Properties</li>
+            <li>First Trust Deeds</li>
+            <li>Up to 100% Loan To Value</li>
+            <li>Closing in 3 - 10 Days</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="center-head">
+        <button id="where-we-lend"><h2>&#8801; &nbsp Where We Lend &nbsp &#8801;</h2></button>
+      </div>
+        <br>
+      <div id='where-we-lend-img' class="center-head hiddenClass">
+        <img 
+          src="https://lh3.googleusercontent.com/cyIRaue8aGoU0nT9OYk3Dh1dDBwaJreKBIBPcOikiOn7wtCLa04hQ1BeHHgDuLdfSD-2rWn5Iue6RgOm5NbPXBTYvzgvtiRNhDq7NrZ14Q5cuZBZg1fieZG6sz9Tf9Qn5n7CpANTF2DOUrMaJMrWmyuMDZZe-51jtnd4pjqANRLVd_PUPS09t6btZN7XnkosHpCeGCucxAJqh1i7h8y5bsxrJsG3aQSPR-iT7BmMy-GXqGo0YyzNfQMA74UDuHkKWzj6dMCL6USd-9gM9J9rskH-mbFkR5zxALe8wmJ839p1eeGrCLfGsGu0Tr703gEQuxqxPMEgd3FNr-p0gLj9V0xzN2ytcVxYMZfPbwJauLQtrOiI2dN76E629S4ZbHKWWcRAv1p9puEt27m2BjREfpaXtfJbAKUok7g0ki_CFyEi5937wyH6s6gDkrSePP_fFN5qn2jsCGiwzXNyKrl6ktt-tBBQ1TYtR53BO2jDDnrgHj9TBN91Yv0BSvOkz9tNP8FI62nIYIabvCZpaS4_4PasdnLh5gOtxYOvUA00f8xkwQF4W5maZ75CJjM7CUrJLKA8xAdh0xLGa6czkoVYJZAN1eTHYh4QCh5X1V-aLOM7qkBP7rSojzhYm_Cp9QgqTBKkKy5tbYgz4zaq0nbnqZ878nN2BW0w5w2LODsBaEg4xGY1RsqSrZcHVHh8lPLcYjOxegiuDIc6sWpKobbHl6Y=w604-h595-no?authuser=2" 
+          alt="Northern California - From about Yuba City down to Fresno, across to Salinas, up the Coast including the Bay Area, up to around Santa Rosa, then up to Williams.">
+      </div>
+      <br>
+      <hr>
+
+      <div id="new-loan-form" class="center-head">
+        <form 
+          id="loan-form"
+          action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScbCqJUKr7p9raFrkMnBA5Ime2Kc4dnZtHrLeAvN9FjA1M2ig/formResponse" 
+          method="POST">
+          <div class="center-head"><h2>New Loan Form</h2></div>
+
+          <div id='form-name' class="form-group">
+            <label for='entry.1291402443'>Name :</label>
+            <br>
+            <input name='entry.1291402443' type='text' required>
+          </div>
+
+          <div id='form-email' class="form-group">
+            <label for='entry.807969949'>Email :</label>
+            <br>
+            <input name='entry.807969949' type='email' required>
+          </div>
+
+          <div id='form-phone' class="form-group">
+            <label for='entry.687532281'>Phone Number :</label>
+            <br>
+            <input name='entry.687532281' type='text'>
+          </div>
+
+          <br>
+          <div id='form-owner-occ-or-invest' class="form-group">
+            <p>Is this property Owner Occupied or is it an Investment Property?</p>
+            <input name='entry.912044038' type='radio' id='owner-occupied' value='Owner Occupied'>
+            <label for='owner-occupied'>Owner Occupied</label>
+            <br>
+
+            <input name='entry.912044038' type='radio' id='investment-property' value='Investment Property'>
+            <label for='investment-property'>Investment Property</label>
+            <br>
+
+          </div>
+          <br>
+
+          <div id='form-prop-address' class="form-group">
+            <label for='entry.1903481898'>What is the subject property address? (please include city / zip)</label>
+            <br>
+            <input name='entry.1903481898' type='text' size='36'>
+          </div>
+
+          <div id='form-closing-date' class="form-group">
+            <label for='entry.2108037076'>How soon do you need to close? </label>
+            <br>
+            <input name='entry.2108037076' type='text' size='36'>
+          </div>
+
+          <br>
+
+          <div id='form-purchase-or-refi' class="form-group">
+            <p>Is this a Purchase or a Refinance?</p>
+            <div id='purchase-div'>
+              <input name='entry.2108130954' required type='radio' id="Purchase" value='Purchase'>
+              <label for='Purchase'>Purchase</label>
+            </div>
+            <div id='refinance-div'>
+              <input name='entry.2108130954' required type='radio' id="Refinance" value='Refinance'>
+              <label for='Refinance'>Refinance</label>
+            </div>
+          </div>
+          <br>
+
+          <div id='form-purchase-price' class="form-group purchase-question">
+            <label for='entry.485828684'>What is your purchase price? </label>
+            <br>
+            <input name='entry.485828684' type='text'>
+          </div>
+
+          <div id='form-down-payment' class="form-group purchase-question">
+            <label for='entry.690732259'>How much is your down payment?</label>
+            <br>
+            <input name='entry.690732259' type='text'>
+          </div>
+
+          <div id='form-estimated-rehab' class="form-group purchase-question">
+            <label for='entry.2131597815'>What is your estimated rehab expense?</label>
+            <br>
+            <input name='entry.2131597815' type='text'>
+          </div>
+
+          <div id='form-estimated-arv' class="form-group purchase-question">
+            <label for='entry.1131533757'>What is your estimated After Repair Value?</label>
+            <br>
+            <input name='entry.1131533757' type='text'>
+          </div>
+
+          <div id='form-purchase-time' class="form-group purchase-question">
+            <label for='entry.1684110662'>How long do you need the loan?</label>
+            <br>
+            <input name='entry.1684110662' type='text' size='36'>
+          </div>
+
+          <div id='form-flipping-exp' class="form-group purchase-question">
+            <label for='entry.573836672'>What is your flipping experience?</label>
+            <br>
+            <input name='entry.573836672' type='text' size='36'>
+          </div>
+
+          <div id='form-estimated-value' class="form-group refi-question">
+            <label for='entry.1531400808'>What is your estimated value?</label>
+            <br>
+            <input name='entry.1531400808' type='text'>
+          </div>
+
+          <div id='form-refi-time' class="form-group refi-question">
+            <label for='entry.955882059'>How long do you need the loan?</label>
+            <br>
+            <input name='entry.955882059' type='text' size='36'>
+          </div>
+
+          <div id='form-exit-strat' class="form-group refi-question">
+            <label for='entry.1966155536'>What is your exit strategy?</label>
+            <br>
+            <input name='entry.1966155536' type='text' size='36'>
+          </div>
+
+          <input class='button' id='submit-btn' type='submit'>
+        </form>
+      </div>
+
+      <br>
+
+      <hr>
+
+      <div class="center-head" id="contact-us">
+        <p>916-529-4665 &nbsp &nbsp | &nbsp &nbsp CapitaMortgageCredit@gmail.com</p>
+      </div>
+      <div class="center-head copyright">
+        <p>Copyright 2021. Capita Mortgage Credit &nbsp &nbsp | &nbsp &nbsp Bureau of Real Estate # 01824199 </p>
+      </div>
+    </div>
+
+    <script>
+
+      // Selectors
+      const purchaseDiv = document.getElementById('purchase-div');
+      const refinanceDiv = document.getElementById('refinance-div');
+      const purchaseQuestions = document.getElementsByClassName('purchase-question');
+      const refiQuestions = document.getElementsByClassName('refi-question');
+      const whereWeLendDiv = document.getElementById('where-we-lend');
+      const whereWeLendImg = document.getElementById('where-we-lend-img');
+
+
+      // remove hidden class for given array
+      let removeHiddenClass = (array) => {  
+        for (let i = 0; i < array.length; i++) {
+
+          // if it has the class, remove the class
+          if (array[i].classList.contains('hiddenClass')) {
+            array[i].classList.remove('hiddenClass');
+          }
+        }
+      }
+
+      // add hidden class for given array
+      let addHiddenClass = (array) => {
+        for (let i = 0; i < array.length; i++) {
+          array[i].classList.add('hiddenClass');
+        }
+      }
+
+      let handlePurchaseClick = () => {
+        removeHiddenClass(purchaseQuestions);
+        addHiddenClass(refiQuestions);
+      }
+
+      let handleRefiClick = () => {
+        removeHiddenClass(refiQuestions);
+        addHiddenClass(purchaseQuestions);
+      }
+
+      purchaseDiv.addEventListener('click', handlePurchaseClick)
+      refinanceDiv.addEventListener('click', handleRefiClick)
+
+      // Open new tab on where we lend image click
+      let handleImgClick = () => {
+        window.open("https://lh3.googleusercontent.com/cyIRaue8aGoU0nT9OYk3Dh1dDBwaJreKBIBPcOikiOn7wtCLa04hQ1BeHHgDuLdfSD-2rWn5Iue6RgOm5NbPXBTYvzgvtiRNhDq7NrZ14Q5cuZBZg1fieZG6sz9Tf9Qn5n7CpANTF2DOUrMaJMrWmyuMDZZe-51jtnd4pjqANRLVd_PUPS09t6btZN7XnkosHpCeGCucxAJqh1i7h8y5bsxrJsG3aQSPR-iT7BmMy-GXqGo0YyzNfQMA74UDuHkKWzj6dMCL6USd-9gM9J9rskH-mbFkR5zxALe8wmJ839p1eeGrCLfGsGu0Tr703gEQuxqxPMEgd3FNr-p0gLj9V0xzN2ytcVxYMZfPbwJauLQtrOiI2dN76E629S4ZbHKWWcRAv1p9puEt27m2BjREfpaXtfJbAKUok7g0ki_CFyEi5937wyH6s6gDkrSePP_fFN5qn2jsCGiwzXNyKrl6ktt-tBBQ1TYtR53BO2jDDnrgHj9TBN91Yv0BSvOkz9tNP8FI62nIYIabvCZpaS4_4PasdnLh5gOtxYOvUA00f8xkwQF4W5maZ75CJjM7CUrJLKA8xAdh0xLGa6czkoVYJZAN1eTHYh4QCh5X1V-aLOM7qkBP7rSojzhYm_Cp9QgqTBKkKy5tbYgz4zaq0nbnqZ878nN2BW0w5w2LODsBaEg4xGY1RsqSrZcHVHh8lPLcYjOxegiuDIc6sWpKobbHl6Y=w604-h595-no?authuser=2", '_blank');
+      }
+
+      // Where we lend picture toggle
+      let handleWhereWeLendClick = () => {
+        if (whereWeLendImg.classList.contains('hiddenClass')) {
+          whereWeLendImg.classList.remove('hiddenClass')
+        } else {
+          whereWeLendImg.classList.add('hiddenClass');
+          
+        }
+      }
+
+      whereWeLendDiv.addEventListener('click', handleWhereWeLendClick)
+      whereWeLendImg.addEventListener('click', handleImgClick);
+
+      // Make changes to the DOM on initial render. 
+      let initialRender = () => {
+        addHiddenClass(refiQuestions);
+        addHiddenClass(purchaseQuestions);
+        // add hidden class to the SEO stuff
+      };
+
+      initialRender();
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>
