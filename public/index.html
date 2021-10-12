@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="BMXiNxCR1DQmdqpWW1LRJRhIWRqBqxvWA7_i3mwsMH8" />
     <title>Capita Mortgage Credit - Private Money Loans</title>
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/9.1.1/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.1.1/firebase-analytics-compat.js"></script>
     <script defer src="/__/firebase/9.1.1/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.1.1/firebase-performance-compat.js"></script>
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
@@ -137,7 +136,9 @@
         body {
           font-size: 1em;
         }
-
+        img {
+          max-height: 425px;
+        }
         #where-we-lend {
           padding: 10px;
         }
@@ -151,6 +152,9 @@
         body {
           font-size: .8em;
         }
+        img {
+          max-height: 291px;
+        }
         .what-we-offer .center-head h2 {
           font-size: 1.6em;
           margin: 10px auto 0px auto;
@@ -160,6 +164,12 @@
         font-size: 1.2em;
       }
       }
+      @media only screen and (max-width: 375px) {
+        img {
+          max-height: 241px;
+        }
+      }
+
       
     </style>
   </head>
@@ -205,12 +215,12 @@
       </div>
 
       <div class="center-head">
-        <button id="where-we-lend"><h2>&#8801; &nbsp Where We Lend &nbsp &#8801;</h2></button>
+        <button id="where-we-lend"><h2>&#8801; Where We Lend &#8801;</h2></button>
       </div>
         <br>
       <div id='where-we-lend-img' class="center-head hiddenClass">
         <img 
-          src="https://lh3.googleusercontent.com/cyIRaue8aGoU0nT9OYk3Dh1dDBwaJreKBIBPcOikiOn7wtCLa04hQ1BeHHgDuLdfSD-2rWn5Iue6RgOm5NbPXBTYvzgvtiRNhDq7NrZ14Q5cuZBZg1fieZG6sz9Tf9Qn5n7CpANTF2DOUrMaJMrWmyuMDZZe-51jtnd4pjqANRLVd_PUPS09t6btZN7XnkosHpCeGCucxAJqh1i7h8y5bsxrJsG3aQSPR-iT7BmMy-GXqGo0YyzNfQMA74UDuHkKWzj6dMCL6USd-9gM9J9rskH-mbFkR5zxALe8wmJ839p1eeGrCLfGsGu0Tr703gEQuxqxPMEgd3FNr-p0gLj9V0xzN2ytcVxYMZfPbwJauLQtrOiI2dN76E629S4ZbHKWWcRAv1p9puEt27m2BjREfpaXtfJbAKUok7g0ki_CFyEi5937wyH6s6gDkrSePP_fFN5qn2jsCGiwzXNyKrl6ktt-tBBQ1TYtR53BO2jDDnrgHj9TBN91Yv0BSvOkz9tNP8FI62nIYIabvCZpaS4_4PasdnLh5gOtxYOvUA00f8xkwQF4W5maZ75CJjM7CUrJLKA8xAdh0xLGa6czkoVYJZAN1eTHYh4QCh5X1V-aLOM7qkBP7rSojzhYm_Cp9QgqTBKkKy5tbYgz4zaq0nbnqZ878nN2BW0w5w2LODsBaEg4xGY1RsqSrZcHVHh8lPLcYjOxegiuDIc6sWpKobbHl6Y=w604-h595-no?authuser=2" 
+          src="https://lh3.googleusercontent.com/pw/AM-JKLWTxefoELajaYHU2s7d4qei7VchqV9sHPc7P97R0GZvHinGeA8rLZ4qAeszhhm0VdNvW9ndoIH7vAxVwXJz94xrbqzL9GpmjkLKdaNksh0cP35QlEPw243thiUne63j2l6raVfQbXSOOccJnkZaEO0=w604-h595" 
           alt="Northern California - From about Yuba City down to Fresno, across to Salinas, up the Coast including the Bay Area, up to around Santa Rosa, then up to Williams.">
       </div>
       <br>
@@ -396,7 +406,7 @@
 
       // Open new tab on where we lend image click
       let handleImgClick = () => {
-        window.open("https://lh3.googleusercontent.com/cyIRaue8aGoU0nT9OYk3Dh1dDBwaJreKBIBPcOikiOn7wtCLa04hQ1BeHHgDuLdfSD-2rWn5Iue6RgOm5NbPXBTYvzgvtiRNhDq7NrZ14Q5cuZBZg1fieZG6sz9Tf9Qn5n7CpANTF2DOUrMaJMrWmyuMDZZe-51jtnd4pjqANRLVd_PUPS09t6btZN7XnkosHpCeGCucxAJqh1i7h8y5bsxrJsG3aQSPR-iT7BmMy-GXqGo0YyzNfQMA74UDuHkKWzj6dMCL6USd-9gM9J9rskH-mbFkR5zxALe8wmJ839p1eeGrCLfGsGu0Tr703gEQuxqxPMEgd3FNr-p0gLj9V0xzN2ytcVxYMZfPbwJauLQtrOiI2dN76E629S4ZbHKWWcRAv1p9puEt27m2BjREfpaXtfJbAKUok7g0ki_CFyEi5937wyH6s6gDkrSePP_fFN5qn2jsCGiwzXNyKrl6ktt-tBBQ1TYtR53BO2jDDnrgHj9TBN91Yv0BSvOkz9tNP8FI62nIYIabvCZpaS4_4PasdnLh5gOtxYOvUA00f8xkwQF4W5maZ75CJjM7CUrJLKA8xAdh0xLGa6czkoVYJZAN1eTHYh4QCh5X1V-aLOM7qkBP7rSojzhYm_Cp9QgqTBKkKy5tbYgz4zaq0nbnqZ878nN2BW0w5w2LODsBaEg4xGY1RsqSrZcHVHh8lPLcYjOxegiuDIc6sWpKobbHl6Y=w604-h595-no?authuser=2", '_blank');
+        window.open("https://lh3.googleusercontent.com/pw/AM-JKLWTxefoELajaYHU2s7d4qei7VchqV9sHPc7P97R0GZvHinGeA8rLZ4qAeszhhm0VdNvW9ndoIH7vAxVwXJz94xrbqzL9GpmjkLKdaNksh0cP35QlEPw243thiUne63j2l6raVfQbXSOOccJnkZaEO0=w604-h595", '_blank');
       }
 
       // Where we lend picture toggle
@@ -422,43 +432,6 @@
       initialRender();
     </script>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    
   </body>
 </html>
