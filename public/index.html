@@ -110,6 +110,21 @@
         margin-bottom: 5px;
       }
 
+      a.noscript-btn {
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        font-size: 1em;
+        font-weight: bolder;
+        color: white;
+        border-radius: 20px;
+        border-style: none;
+        background-color:rgb(108, 164, 233);
+      }
+      a.noscript-btn:hover {
+        color:rgba(255, 166, 0, 0.884);
+        background-color:rgba(108, 164, 233, 0.596);
+      }
       .form-group {
         margin: 20px auto 10px auto;
       }
@@ -201,6 +216,7 @@
 
       <div class="what-we-offer">
         <div class="center-head"><h2>What We Offer</h2></div>
+        
         <div class="offer-list center-head">
           <ul>
             <li>Same Day Approval</li>
@@ -217,8 +233,15 @@
 
       <div class="center-head">
         <button id="where-we-lend"><h2>&#8801; Where We Lend &#8801;</h2></button>
-      </div>
         <br>
+      </div>
+      <div class="center-head noscript-container">
+        <noscript>
+          <h3>Javascript is disabled</h3>
+          <p>You need to enable Javascript to view where we lend.</p>
+          <a class='noscript-btn' href="http://www.enable-javascript.com/" target="_blank">Show me how to enable it</a>
+        </noscript>
+      </div>
       <div id='where-we-lend-img' class="center-head hiddenClass">
         <img 
           src="https://lh3.googleusercontent.com/pw/AM-JKLWTxefoELajaYHU2s7d4qei7VchqV9sHPc7P97R0GZvHinGeA8rLZ4qAeszhhm0VdNvW9ndoIH7vAxVwXJz94xrbqzL9GpmjkLKdaNksh0cP35QlEPw243thiUne63j2l6raVfQbXSOOccJnkZaEO0=w604-h595" 
@@ -233,6 +256,14 @@
           action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScbCqJUKr7p9raFrkMnBA5Ime2Kc4dnZtHrLeAvN9FjA1M2ig/formResponse" 
           method="POST">
           <div class="center-head"><h2>New Loan Form</h2></div>
+
+          <div class="center-head noscript-container">
+            <noscript>
+              <h3>Javascript is disabled</h3>
+              <p>You need to enable Javascript to successfully submit this form.</p>
+              <a class='noscript-btn' href="http://www.enable-javascript.com/" target="_blank">Show me how to enable it</a>
+            </noscript>
+          </div>
 
           <div id='form-name' class="form-group">
             <label for='entry.1291402443'>Name :</label>
@@ -345,6 +376,16 @@
             <label for='entry.1966155536'>What is your exit strategy?</label>
             <br>
             <input name='entry.1966155536' type='text' size='36'>
+          </div>
+
+          <div class="center-head noscript-container">
+            <noscript>
+              <h3>Javascript is disabled</h3>
+              <p>You need to enable Javascript to successfully submit this form.</p>
+              <a class='noscript-btn' href="http://www.enable-javascript.com/" target="_blank">Show me how to enable it</a>
+              <br>
+              <br>
+            </noscript>
           </div>
 
           <input class='button' id='submit-btn' type='submit'>
