@@ -125,11 +125,13 @@
         color:rgba(255, 166, 0, 0.884);
         background-color:rgba(108, 164, 233, 0.596);
       }
+
       .form-group {
-        margin: 20px auto 10px auto;
+        margin: 20px 5% 10px 5%;
       }
 
       .button {
+        margin: 0px 5% 0px 5%;
         padding: 10px;
         font-size: 1.3em;
         font-weight: bolder;
@@ -142,6 +144,13 @@
       .button:hover {
         color:rgba(255, 166, 0, 0.884);
         background-color:rgba(108, 164, 233, 0.596);
+      }
+
+      .copyright-space {
+        height: 100vh;
+      }
+      .copyright {
+        font-size: 0.9em;
       }
 
       .hiddenClass {
@@ -195,9 +204,9 @@
 
       <nav class="nav-bar">
         <ul>
-          <li><a href="#where-we-lend">Where We Lend</a></li>
+          <li id='where-we-lend-nav'><a href="#where-we-lend">Where We Lend</a></li>
           <li><a href="#new-loan-form">New Loan Form</a></li>
-          <li><a href="#contact-us">Contact Us</a></li>
+          <li id='contact-us-nav'><a href="#contact-us">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -399,9 +408,10 @@
       <div class="center-head" id="contact-us">
         <p>916-529-4665 &nbsp &nbsp | &nbsp &nbsp CapitaMortgageCredit@gmail.com</p>
       </div>
-      <div class="center-head copyright">
+      <div class="center-head copyright" id='copyright-div'>
         <p>Copyright 2021. Capita Mortgage Credit &nbsp &nbsp | &nbsp &nbsp Bureau of Real Estate # 01824199 </p>
       </div>
+      <div class='copyright-space'></div>
     </div>
 
     <script>
@@ -413,6 +423,9 @@
       const refiQuestions = document.getElementsByClassName('refi-question');
       const whereWeLendDiv = document.getElementById('where-we-lend');
       const whereWeLendImg = document.getElementById('where-we-lend-img');
+      const whereWeLendNav = document.getElementById('where-we-lend-nav');
+      const contactUsNav = document.getElementById('contact-us-nav');
+      const copyrightSpaceDiv = document.getElementsByClassName('copyright-space');
 
 
       // remove hidden class for given array
@@ -461,13 +474,28 @@
         }
       }
 
+      // Where we lend Nav Click
+      let handleWhereWeLendNavClick = () => {
+        if (whereWeLendImg.classList.contains('hiddenClass')) {
+          whereWeLendImg.classList.remove('hiddenClass');
+        }
+      }
+
       whereWeLendDiv.addEventListener('click', handleWhereWeLendClick)
       whereWeLendImg.addEventListener('click', handleImgClick);
+      whereWeLendNav.addEventListener('click', handleWhereWeLendNavClick)
+
+      // Contact Us Nav Click
+      let handleContactUsNavClick = () => {
+        removeHiddenClass(copyrightSpaceDiv);
+      }
+      contactUsNav.addEventListener('click', handleContactUsNavClick);
 
       // Make changes to the DOM on initial render. 
       let initialRender = () => {
         addHiddenClass(refiQuestions);
         addHiddenClass(purchaseQuestions);
+        addHiddenClass(copyrightSpaceDiv)
         // add hidden class to the SEO stuff
       };
 
