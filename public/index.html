@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="BMXiNxCR1DQmdqpWW1LRJRhIWRqBqxvWA7_i3mwsMH8" />
+    <meta name=description content="Capita Mortgage Credit. Private money loans in California.">
     <title>Capita Mortgage Credit - Private Money Loans</title>
 
     <!-- update the version number as needed -->
@@ -26,7 +27,7 @@
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 1.2em;
         color: gainsboro;
-        background-color: rgb(55, 79, 109);
+        background-color: rgb(48, 70, 97);
       }
 
       .container {
@@ -96,14 +97,14 @@
         padding: 20px;
         font-size: 1em;
         font-weight: bolder;
-        color: white;
+        color: gainsboro;
         border-radius: 20px;
         border-style: none;
-        background-color:rgb(108, 164, 233);
+        background-color:rgb(83, 125, 177);
       }
       #where-we-lend:hover {
         color:rgba(255, 166, 0, 0.884);
-        background-color:rgba(108, 164, 233, 0.596);
+        background-color:rgba(83, 125, 177, 0.6);
       }
 
       label {
@@ -116,18 +117,24 @@
         margin: 10px;
         font-size: 1em;
         font-weight: bolder;
-        color: white;
+        color: gainsboro;
         border-radius: 20px;
         border-style: none;
-        background-color:rgb(108, 164, 233);
+        background-color:rgb(83, 125, 177);
       }
       a.noscript-btn:hover {
         color:rgba(255, 166, 0, 0.884);
-        background-color:rgba(108, 164, 233, 0.596);
+        background-color:rgba(83, 125, 177, 0.6);
       }
 
       .form-group {
         margin: 20px 5% 10px 5%;
+      }
+
+      input[type="radio"] {
+        -ms-transform: scale(1.5); /* IE 9 */
+        -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+        transform: scale(1.5);
       }
 
       .button {
@@ -135,15 +142,15 @@
         padding: 10px;
         font-size: 1.3em;
         font-weight: bolder;
-        color: white;
+        color: gainsboro;
         border-radius: 10px;
         border-style: none;
-        background-color:rgb(108, 164, 233);
+        background-color:rgb(83, 125, 177);
         
       }
       .button:hover {
         color:rgba(255, 166, 0, 0.884);
-        background-color:rgba(108, 164, 233, 0.596);
+        background-color:rgba(83, 125, 177, 0.6);
       }
 
       .copyright-space {
@@ -275,21 +282,21 @@
           </div>
 
           <div id='form-name' class="form-group">
-            <label for='entry.1291402443'>Name :</label>
+            <label for='name'>Name :</label>
             <br>
-            <input name='entry.1291402443' type='text' required>
+            <input name='entry.1291402443' id='name' type='text' required>
           </div>
 
           <div id='form-email' class="form-group">
-            <label for='entry.807969949'>Email :</label>
+            <label for='email'>Email :</label>
             <br>
-            <input name='entry.807969949' type='email' required>
+            <input name='entry.807969949' id='email' type='email' required>
           </div>
 
           <div id='form-phone' class="form-group">
-            <label for='entry.687532281'>Phone Number :</label>
+            <label for='phone-number'>Phone Number :</label>
             <br>
-            <input name='entry.687532281' type='text'>
+            <input name='entry.687532281' id='phone-number' type='text'>
           </div>
 
           <br>
@@ -298,7 +305,7 @@
             <input name='entry.912044038' type='radio' id='owner-occupied' value='Owner Occupied'>
             <label for='owner-occupied'>Owner Occupied</label>
             <br>
-
+            <br>
             <input name='entry.912044038' type='radio' id='investment-property' value='Investment Property'>
             <label for='investment-property'>Investment Property</label>
             <br>
@@ -307,15 +314,15 @@
           <br>
 
           <div id='form-prop-address' class="form-group">
-            <label for='entry.1903481898'>What is the subject property address? (please include city / zip)</label>
+            <label for='property-address'>What is the subject property address? (please include city / zip)</label>
             <br>
-            <input name='entry.1903481898' type='text' size='36'>
+            <input name='entry.1903481898' id='property-address' type='text' size='36'>
           </div>
 
           <div id='form-closing-date' class="form-group">
-            <label for='entry.2108037076'>How soon do you need to close? </label>
+            <label for='close-date'>How soon do you need to close? </label>
             <br>
-            <input name='entry.2108037076' type='text' size='36'>
+            <input name='entry.2108037076' id='close-date' type='text' size='36'>
           </div>
 
           <br>
@@ -326,6 +333,7 @@
               <input name='entry.2108130954' required type='radio' id="Purchase" value='Purchase'>
               <label for='Purchase'>Purchase</label>
             </div>
+            <br>
             <div id='refinance-div'>
               <input name='entry.2108130954' required type='radio' id="Refinance" value='Refinance'>
               <label for='Refinance'>Refinance</label>
@@ -334,57 +342,57 @@
           <br>
 
           <div id='form-purchase-price' class="form-group purchase-question">
-            <label for='entry.485828684'>What is your purchase price? </label>
+            <label for='purchase-price'>What is your purchase price? </label>
             <br>
-            <input name='entry.485828684' type='text'>
+            <input name='entry.485828684' id='purchase-price' type='text'>
           </div>
 
           <div id='form-down-payment' class="form-group purchase-question">
-            <label for='entry.690732259'>How much is your down payment?</label>
+            <label for='down-payment'>How much is your down payment?</label>
             <br>
-            <input name='entry.690732259' type='text'>
+            <input name='entry.690732259' id='down-payment' type='text'>
           </div>
 
           <div id='form-estimated-rehab' class="form-group purchase-question">
-            <label for='entry.2131597815'>What is your estimated rehab expense?</label>
+            <label for='estimated-rehab'>What is your estimated rehab expense?</label>
             <br>
-            <input name='entry.2131597815' type='text'>
+            <input name='entry.2131597815' id='estimated-rehab' type='text'>
           </div>
 
           <div id='form-estimated-arv' class="form-group purchase-question">
-            <label for='entry.1131533757'>What is your estimated After Repair Value?</label>
+            <label for='estimated-arv'>What is your estimated After Repair Value?</label>
             <br>
-            <input name='entry.1131533757' type='text'>
+            <input name='entry.1131533757' id='estimated-arv' type='text'>
           </div>
 
           <div id='form-purchase-time' class="form-group purchase-question">
-            <label for='entry.1684110662'>How long do you need the loan?</label>
+            <label for='purchase-time'>How long do you need the loan?</label>
             <br>
-            <input name='entry.1684110662' type='text' size='36'>
+            <input name='entry.1684110662' id='purchase-time' type='text' size='36'>
           </div>
 
           <div id='form-flipping-exp' class="form-group purchase-question">
-            <label for='entry.573836672'>What is your flipping experience?</label>
+            <label for='flipping-exp'>What is your flipping experience?</label>
             <br>
-            <input name='entry.573836672' type='text' size='36'>
+            <input name='entry.573836672' id='flipping-exp' type='text' size='36'>
           </div>
 
           <div id='form-estimated-value' class="form-group refi-question">
-            <label for='entry.1531400808'>What is your estimated value?</label>
+            <label for='estimated-value'>What is your estimated value?</label>
             <br>
-            <input name='entry.1531400808' type='text'>
+            <input name='entry.1531400808' id='estimated-value' type='text'>
           </div>
 
           <div id='form-refi-time' class="form-group refi-question">
-            <label for='entry.955882059'>How long do you need the loan?</label>
+            <label for='refi-time'>How long do you need the loan?</label>
             <br>
-            <input name='entry.955882059' type='text' size='36'>
+            <input name='entry.955882059' id='refi-time' type='text' size='36'>
           </div>
 
           <div id='form-exit-strat' class="form-group refi-question">
-            <label for='entry.1966155536'>What is your exit strategy?</label>
+            <label for='exit-strat'>What is your exit strategy?</label>
             <br>
-            <input name='entry.1966155536' type='text' size='36'>
+            <input name='entry.1966155536' id='exit-strat' type='text' size='36'>
           </div>
 
           <div class="center-head noscript-container">
